@@ -11,7 +11,7 @@
 	<br>
     <div class="container jumbotron">
         <h1>Autorização</h1>
-        <form action="destinatarios.html">
+        <form action="tipo de campanha.html">
             <div class="row">
                 <div class="form-group col-md-2">
                     <label for="sel2">Grupos autorizados:</label>
@@ -22,6 +22,36 @@
                         <option>Opção 4</option>
                         <option>Opção 5</option>
                     </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <div class="radio">
+                        <label class=""><input type="radio" name="filtro">Retorno Livre</label>
+                    </div>
+                    <div class="checkbox" style="padding-left: 30px;">
+                            <label><input type="checkbox" >Enviar somente para quem deseja receber emails</label>
+                        </div>
+                    <div class="radio">
+                        <label class=""><input type="radio" name="filtro">Retorno por Operador</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-5">
+                    <fieldset>
+                        <legend><h3>Definir horário</h3></legend>
+                        <div class="radio">
+                            <label class=""><input type="radio" name="horario">24H</label>
+                        </div>
+                        <div class="radio">
+                            <label class=""><input type="radio" name="horario">Padrão: 07h ás 19h</label>
+                        </div>
+                        <div class="radio">
+                            <label class=""><input type="radio" name="horario">Comercial: 8h ás 12h e 14h ás 18h</label>
+                        </div>
+                        <div class="radio">
+                            <label class=""><input type="radio" name="horario">restringir horarios</label>
+                        </div>
+                    </fieldset>
                 </div>
             </div>
             <button type="submit" class="btn btn-success">Prosseguir</button>
