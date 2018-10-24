@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>formulario</title>
+</head>
+<body style="background-color: aliceblue;">
+	<br>
+    <div class="container jumbotron">
+        <h1>Destinatarios</h1>
+        <form action="autorizacao.html">
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="ficha">Ficha de atendimento</label>
+                    <select class="form-control" id="ficha">
+                        <option>- Selecione -</option>
+                        <option>Opção 1</option>
+                        <option>Opção 2</option>
+                        <option>Opção 3</option>
+                        <option>Opção 4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label for="nome">Roteiro para Gravação de ocorrencia</label>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="70%"><input type="text" class="form-control" id="nome"></td>
+                                <td width="10%"><button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-search"></span></button></td>
+                                <td width="10%"><button class="btn btn-danger pull-right"><span class="glyphicon glyphicon-trash"></span></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="">
+                <div class="form-group col-md-12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td width="30%">
+                                    <label class="label-control" for="select_filtro">Ficha de atendimento</label>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="10%">
+                                    <div class="radio">
+                                        <label class=""><input type="radio" name="filtro">Filtro</label>
+                                    </div>
+                                </td>
+                                <td width="70%">
+                                    <div class="form-group col-md-10">
+                                        <select class="form-control" id="select_filtro">
+                                            <option>- Selecione -</option>
+                                            <option>Opção 1</option>
+                                            <option>Opção 2</option>
+                                            <option>Opção 3</option>
+                                            <option>Opção 4</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" >Enviar somente para quem deseja receber emails</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio">
+                                        <label class=""><input type="radio" name="filtro">Lista Externa</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-10">
+                    <div>
+                        <label for="">Destinatarios pessoas juridica</label>
+                    </div>
+                    <label class="radio-inline"><input type="radio" name="optradio" checked>Contatos Principais</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Contatos Selecionados</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Prosseguir</button>
+        </form>
+    </div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
